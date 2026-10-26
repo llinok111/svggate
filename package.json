@@ -1,0 +1,33 @@
+{
+  "name": "svggate",
+  "version": "0.1.0",
+  "description": "Render-verified gate for SVG optimization: attribute visual regressions to the svgo plugin that caused them.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "svggate": "./bin/svggate.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "demo": "node scripts/build-demo.mjs",
+    "check": "node bin/svggate.mjs check"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "pngjs": "^7.0.0",
+    "svgo": "^4.1.0"
+  }
+}

@@ -1,0 +1,13 @@
+# Normalise every text file to LF so a Windows checkout does not report phantom
+# diffs. Binary assets are excluded explicitly.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.zip binary
+
+package-lock.json -diff

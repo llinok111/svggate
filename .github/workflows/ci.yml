@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: node ${{ matrix.node }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # The lowest entry is the `engines` floor. A version that is declared but
+        # never executed is a claim, not a guarantee, so 18 is really run.
+        node: ['18', '20', '22', '24']
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - name: Unit, structural, gate, CLI and packaging tests
+        run: node scripts/test.mjs
+      - name: CLI smoke test (exit code contract)
+        shell: bash
+        run: |
+          set +e
+          node bin/svggate.mjs check test/fixtures/clean-icon.svg --quiet; clean=$?
+          node bin/svggate.mjs check test/fixtures/use-inheritance.svg --quiet; broken=$?
+          echo "clean=$clean broken=$broken"
+          test "$clean" -eq 0 && test "$broken" -eq 1
+
+  corpus:
+    name: false-positive measurement
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Default preset over 28 real SVGs must not report breakage
+        run: node scripts/corpus-check.mjs

@@ -1,0 +1,45 @@
+svggate — third-party notices
+=============================
+
+svggate contains no copied source code from any project below. It wraps them as
+runtime dependencies and ships its own implementation. The notices are here
+because the licences require attribution, and because the dependency list is part
+of what a reader needs in order to trust the measurements.
+
+1. svgo — https://github.com/svg/svgo
+   Licence: MIT (LICENSE at the repository root)
+   Copyright (c) Kir Belevich
+   Used as: the optimiser under test. `src/plugins.mjs` reproduces the *order* of
+   `plugins/preset-default.js` as a plain list of plugin names because svgo's
+   `exports` map exposes only the package root. No svgo code is copied: the list
+   is verified against a real `preset-default` run by
+   `test/gate.test.mjs` ("the preset mirror matches a real svgo preset-default
+   run"). Pinned to the 4.x line in `package.json`.
+
+2. @resvg/resvg-js — https://github.com/thx/resvg-js (resvg: https://github.com/linebender/resvg)
+   Licence: MPL-2.0
+   Copyright (c) resvg-js contributors / RazrFalcon
+   Used as: the rasteriser. Loaded as a prebuilt native dependency; its source is
+   not modified, not vendored and not bundled in this repository or in the
+   release archive. MPL-2.0 obligations attach to that project's own files, which
+   you receive from its distribution channel, not from here.
+
+3. pngjs — https://github.com/pngjs/pngjs
+   Licence: MIT
+   Copyright (c) Krzysztof Dyki
+   Used as: PNG encoding for the diff images the CLI writes with --diff-dir.
+
+Test fixtures and the calibration corpus
+----------------------------------------
+`test/fixtures/arc-dot.svg` and `test/fixtures/use-inheritance.svg` are minimal
+reproductions taken from public svgo issue reports (#2104 and #2239). They are
+tiny SVG documents, copied for regression coverage; the issue text itself is not
+reproduced.
+
+`test/corpus/*.svg` files are third-party icon and logo assets collected from
+public npm packages that were already present on the development machine
+(iconmonstr icons, Keyv, css-tree, and project logos). They are included only as
+input data for the false-positive measurement in `README.md`. They are not
+covered by svggate's MIT licence; consult each file's originating package for its
+own terms, and delete the directory if you redistribute this repository
+commercially.

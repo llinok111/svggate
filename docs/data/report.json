@@ -1,0 +1,5522 @@
+{
+  "generated": "2026-10-26T16:27:02.378Z",
+  "reports": [
+    {
+      "key": "use-inheritance",
+      "note": "upstream svgo#2239 — fill-opacity=\"1\" is the only thing blocking inheritance into <use>",
+      "verdict": "broken",
+      "sizes": {
+        "before": 313,
+        "after": 180
+      },
+      "input": {
+        "bytes": 313,
+        "width": 100,
+        "height": 100,
+        "viewBox": "0 0 100 100",
+        "elements": 2,
+        "ids": 1,
+        "render": "1536x1536",
+        "density": 15.36
+      },
+      "blamed": [
+        {
+          "plugin": "removeUnknownsAndDefaults",
+          "verdict": "broken",
+          "bytesSaved": 17,
+          "reasons": [
+            "paint drifted: p99 channel delta 178/255 across 96.2% of painted blocks at 1536px wide"
+          ]
+        }
+      ],
+      "dropped": [],
+      "artifact": {
+        "verdict": "broken",
+        "pixels": "broken",
+        "findings": [],
+        "bytes": 180
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 300,
+          "bytesSaved": 13,
+          "ms": 216.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 300,
+          "bytesSaved": 0,
+          "ms": 205.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 216,
+          "bytesSaved": 84,
+          "ms": 154.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 163.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 163.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 166.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 208.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 163.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 167.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 169.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 171,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 172.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 165.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 216,
+          "bytesSaved": 0,
+          "ms": 166.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 199,
+          "bytesSaved": 17,
+          "ms": 380.7,
+          "verdict": "broken",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "broken",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 178,
+            "colourChangedRatio": 0.9622,
+            "changedRatio": 0,
+            "worstCell": {
+              "ratio": 1,
+              "changed": 2304,
+              "x": 4,
+              "y": 0
+            }
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 199,
+          "bytesSaved": 0,
+          "ms": 194.7,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 199,
+          "bytesSaved": 0,
+          "ms": 169.5,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 199,
+          "bytesSaved": 0,
+          "ms": 156.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 199,
+          "bytesSaved": 0,
+          "ms": 159.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 199,
+          "bytesSaved": 0,
+          "ms": 160.2,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 194,
+          "bytesSaved": 5,
+          "ms": 157.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 194,
+          "bytesSaved": 0,
+          "ms": 159.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 194,
+          "bytesSaved": 0,
+          "ms": 152.2,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 194,
+          "bytesSaved": 0,
+          "ms": 197.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 180,
+          "bytesSaved": 14,
+          "ms": 172.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 158.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 152,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 150.8,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 148.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 151.7,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 149.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 153.4,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 149.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 180,
+          "bytesSaved": 0,
+          "ms": 145.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [
+        "use-inheritance.removeUnknownsAndDefaults.diff.png"
+      ],
+      "markdown": "## use-inheritance.svg — BROKEN\n\ninput 313B (100x100 intrinsic, viewBox mapped to 1536x1536, 2 drawable, 1 ids) → artifact 180B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 300 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 300 | ok | ok | — |\n| 3 | `removeComments` | 216 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 216 | ok | ok | — |\n| 5 | `removeMetadata` | 216 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 216 | ok | ok | — |\n| 7 | `cleanupAttrs` | 216 | ok | ok | — |\n| 8 | `mergeStyles` | 216 | ok | ok | — |\n| 9 | `inlineStyles` | 216 | ok | ok | — |\n| 10 | `minifyStyles` | 216 | ok | ok | — |\n| 11 | `cleanupIds` | 216 | ok | ok | — |\n| 12 | `removeUselessDefs` | 216 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 216 | ok | ok | — |\n| 14 | `convertColors` | 216 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 199 | FAIL | FAIL | colour Δ178; region 100% |\n| 16 | `removeNonInheritableGroupAttrs` | 199 | ok | FAIL | — |\n| 17 | `removeUselessStrokeAndFill` | 199 | ok | FAIL | — |\n| 18 | `cleanupEnableBackground` | 199 | ok | FAIL | — |\n| 19 | `removeHiddenElems` | 199 | ok | FAIL | — |\n| 20 | `removeEmptyText` | 199 | ok | FAIL | — |\n| 21 | `convertShapeToPath` | 194 | ok | FAIL | — |\n| 22 | `convertEllipseToCircle` | 194 | ok | FAIL | — |\n| 23 | `moveElemsAttrsToGroup` | 194 | ok | FAIL | — |\n| 24 | `moveGroupAttrsToElems` | 194 | ok | FAIL | — |\n| 25 | `collapseGroups` | 180 | ok | FAIL | — |\n| 26 | `convertPathData` | 180 | ok | FAIL | — |\n| 27 | `convertTransform` | 180 | ok | FAIL | — |\n| 28 | `removeEmptyAttrs` | 180 | ok | FAIL | — |\n| 29 | `removeEmptyContainers` | 180 | ok | FAIL | — |\n| 30 | `mergePaths` | 180 | ok | FAIL | — |\n| 31 | `removeUnusedNS` | 180 | ok | FAIL | — |\n| 32 | `sortAttrs` | 180 | ok | FAIL | — |\n| 33 | `sortDefsChildren` | 180 | ok | FAIL | — |\n| 34 | `removeDesc` | 180 | ok | FAIL | — |\n\n### Attributed\n- `removeUnknownsAndDefaults` (broken)\n  - paint drifted: p99 channel delta 178/255 across 96.2% of painted blocks at 1536px wide\n\nArtifact verdict: **broken** (pixels: broken)\n"
+    },
+    {
+      "key": "arc-dot",
+      "note": "upstream svgo#2104 — a 2-unit dot disappears when the path is rewritten as a degenerate arc",
+      "verdict": "broken",
+      "sizes": {
+        "before": 520,
+        "after": 213
+      },
+      "input": {
+        "bytes": 520,
+        "width": 590,
+        "height": 310,
+        "viewBox": "2195.656274 1486.713736 52.67746 185.305106",
+        "elements": 2,
+        "ids": 1,
+        "render": "437x1536",
+        "density": 8.289
+      },
+      "blamed": [
+        {
+          "plugin": "convertPathData",
+          "verdict": "broken",
+          "bytesSaved": 138,
+          "reasons": [
+            "localised change: 176px (26% of region 17,17)"
+          ]
+        }
+      ],
+      "dropped": [],
+      "artifact": {
+        "verdict": "broken",
+        "pixels": "broken",
+        "findings": [
+          {
+            "code": "viewBox-rounded",
+            "severity": "info",
+            "message": "viewBox rounded by 0.000% of its longest edge",
+            "detail": "2195.656274 1486.713736 52.67746 185.305106 -> 2195.656 1486.714 52.677 185.305"
+          },
+          {
+            "code": "ids-renamed",
+            "severity": "info",
+            "message": "1 id(s) renamed, all internal references still resolve",
+            "detail": "#page1 — external selectors that used these ids will break"
+          }
+        ],
+        "bytes": 213
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 498,
+          "bytesSaved": 22,
+          "ms": 67,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 460,
+          "bytesSaved": 38,
+          "ms": 40.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 382,
+          "bytesSaved": 78,
+          "ms": 44.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 40,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 38.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 45.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 38.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 38.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 39.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 382,
+          "bytesSaved": 0,
+          "ms": 47.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 371,
+          "bytesSaved": 11,
+          "ms": 44.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [
+            "1 id(s) renamed, all internal references still resolve"
+          ],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 371,
+          "bytesSaved": 0,
+          "ms": 39.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 358,
+          "bytesSaved": 13,
+          "ms": 44,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [
+            "viewBox rounded by 0.000% of its longest edge"
+          ],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 46.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 41.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 39.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 45.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 43.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 40.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 45.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 43.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 40.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 43.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 358,
+          "bytesSaved": 0,
+          "ms": 46.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 351,
+          "bytesSaved": 7,
+          "ms": 40.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 213,
+          "bytesSaved": 138,
+          "ms": 75.3,
+          "verdict": "broken",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "broken",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0.0003,
+            "changedRatio": 0,
+            "worstCell": {
+              "ratio": 0.262,
+              "changed": 176,
+              "x": 17,
+              "y": 17
+            }
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 48.8,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 38.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 40.8,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 38.4,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 45.2,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 38.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 38.7,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 213,
+          "bytesSaved": 0,
+          "ms": 43.7,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 437,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [
+        "arc-dot.convertPathData.diff.png"
+      ],
+      "markdown": "## arc-dot.svg — BROKEN\n\ninput 520B (590x310 intrinsic, viewBox mapped to 437x1536, 2 drawable, 1 ids) → artifact 213B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 498 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 460 | ok | ok | — |\n| 3 | `removeComments` | 382 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 382 | ok | ok | — |\n| 5 | `removeMetadata` | 382 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 382 | ok | ok | — |\n| 7 | `cleanupAttrs` | 382 | ok | ok | — |\n| 8 | `mergeStyles` | 382 | ok | ok | — |\n| 9 | `inlineStyles` | 382 | ok | ok | — |\n| 10 | `minifyStyles` | 382 | ok | ok | — |\n| 11 | `cleanupIds` | 371 | ok | ok | — |\n| 12 | `removeUselessDefs` | 371 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 358 | ok | ok | — |\n| 14 | `convertColors` | 358 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 358 | ok | ok | — |\n| 16 | `removeNonInheritableGroupAttrs` | 358 | ok | ok | — |\n| 17 | `removeUselessStrokeAndFill` | 358 | ok | ok | — |\n| 18 | `cleanupEnableBackground` | 358 | ok | ok | — |\n| 19 | `removeHiddenElems` | 358 | ok | ok | — |\n| 20 | `removeEmptyText` | 358 | ok | ok | — |\n| 21 | `convertShapeToPath` | 358 | ok | ok | — |\n| 22 | `convertEllipseToCircle` | 358 | ok | ok | — |\n| 23 | `moveElemsAttrsToGroup` | 358 | ok | ok | — |\n| 24 | `moveGroupAttrsToElems` | 358 | ok | ok | — |\n| 25 | `collapseGroups` | 351 | ok | ok | — |\n| 26 | `convertPathData` | 213 | FAIL | FAIL | region 26%; 0.00% pixels |\n| 27 | `convertTransform` | 213 | ok | FAIL | — |\n| 28 | `removeEmptyAttrs` | 213 | ok | FAIL | — |\n| 29 | `removeEmptyContainers` | 213 | ok | FAIL | — |\n| 30 | `mergePaths` | 213 | ok | FAIL | — |\n| 31 | `removeUnusedNS` | 213 | ok | FAIL | — |\n| 32 | `sortAttrs` | 213 | ok | FAIL | — |\n| 33 | `sortDefsChildren` | 213 | ok | FAIL | — |\n| 34 | `removeDesc` | 213 | ok | FAIL | — |\n\n### Attributed\n- `convertPathData` (broken)\n  - localised change: 176px (26% of region 17,17)\n\nArtifact verdict: **broken** (pixels: broken)\n- [info] viewBox-rounded: viewBox rounded by 0.000% of its longest edge\n- [info] ids-renamed: 1 id(s) renamed, all internal references still resolve\n"
+    },
+    {
+      "key": "aria-labelledby",
+      "note": "upstream svgo#2300 — cleanupIds strips the <title> id and leaves aria-labelledby dangling; pixels are identical",
+      "verdict": "broken",
+      "sizes": {
+        "before": 215,
+        "after": 189
+      },
+      "input": {
+        "bytes": 215,
+        "width": 120,
+        "height": 40,
+        "viewBox": "0 0 120 40",
+        "elements": 1,
+        "ids": 1,
+        "render": "1536x512",
+        "density": 12.8
+      },
+      "blamed": [
+        {
+          "plugin": "cleanupIds",
+          "verdict": "broken",
+          "bytesSaved": 7,
+          "reasons": [
+            "dangling-reference: 1 reference(s) point at ids that no longer exist (#t via aria on <svg>)"
+          ]
+        }
+      ],
+      "dropped": [],
+      "artifact": {
+        "verdict": "broken",
+        "pixels": "ok",
+        "findings": [
+          {
+            "code": "dangling-reference",
+            "severity": "error",
+            "message": "1 reference(s) point at ids that no longer exist",
+            "detail": "#t via aria on <svg>"
+          }
+        ],
+        "bytes": 189
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 207,
+          "bytesSaved": 8,
+          "ms": 53.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 59.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 53.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 52.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 57.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 58.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 51.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 57.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 60,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 207,
+          "bytesSaved": 0,
+          "ms": 52.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 200,
+          "bytesSaved": 7,
+          "ms": 58.4,
+          "verdict": "broken",
+          "stateVerdict": "broken",
+          "findings": [
+            {
+              "code": "dangling-reference",
+              "severity": "error",
+              "message": "1 reference(s) point at ids that no longer exist",
+              "detail": "#t via aria on <svg>"
+            }
+          ],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 200,
+          "bytesSaved": 0,
+          "ms": 54.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 200,
+          "bytesSaved": 0,
+          "ms": 55.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 200,
+          "bytesSaved": 0,
+          "ms": 62,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 189,
+          "bytesSaved": 11,
+          "ms": 57.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 55.5,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 61.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 52.6,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 52.7,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 57.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 54.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 53.5,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 58.5,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 53,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 52.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 58.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 53.5,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 55.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 59.9,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 61.2,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 57.3,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 64.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 60,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 189,
+          "bytesSaved": 0,
+          "ms": 52.1,
+          "verdict": "ok",
+          "stateVerdict": "broken",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [],
+      "markdown": "## aria-labelledby.svg — BROKEN\n\ninput 215B (120x40 intrinsic, viewBox mapped to 1536x512, 1 drawable, 1 ids) → artifact 189B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 207 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 207 | ok | ok | — |\n| 3 | `removeComments` | 207 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 207 | ok | ok | — |\n| 5 | `removeMetadata` | 207 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 207 | ok | ok | — |\n| 7 | `cleanupAttrs` | 207 | ok | ok | — |\n| 8 | `mergeStyles` | 207 | ok | ok | — |\n| 9 | `inlineStyles` | 207 | ok | ok | — |\n| 10 | `minifyStyles` | 207 | ok | ok | — |\n| 11 | `cleanupIds` | 200 | FAIL | FAIL | 1 reference(s) point at ids that no longer exist |\n| 12 | `removeUselessDefs` | 200 | ok | FAIL | — |\n| 13 | `cleanupNumericValues` | 200 | ok | FAIL | — |\n| 14 | `convertColors` | 200 | ok | FAIL | — |\n| 15 | `removeUnknownsAndDefaults` | 189 | ok | FAIL | — |\n| 16 | `removeNonInheritableGroupAttrs` | 189 | ok | FAIL | — |\n| 17 | `removeUselessStrokeAndFill` | 189 | ok | FAIL | — |\n| 18 | `cleanupEnableBackground` | 189 | ok | FAIL | — |\n| 19 | `removeHiddenElems` | 189 | ok | FAIL | — |\n| 20 | `removeEmptyText` | 189 | ok | FAIL | — |\n| 21 | `convertShapeToPath` | 189 | ok | FAIL | — |\n| 22 | `convertEllipseToCircle` | 189 | ok | FAIL | — |\n| 23 | `moveElemsAttrsToGroup` | 189 | ok | FAIL | — |\n| 24 | `moveGroupAttrsToElems` | 189 | ok | FAIL | — |\n| 25 | `collapseGroups` | 189 | ok | FAIL | — |\n| 26 | `convertPathData` | 189 | ok | FAIL | — |\n| 27 | `convertTransform` | 189 | ok | FAIL | — |\n| 28 | `removeEmptyAttrs` | 189 | ok | FAIL | — |\n| 29 | `removeEmptyContainers` | 189 | ok | FAIL | — |\n| 30 | `mergePaths` | 189 | ok | FAIL | — |\n| 31 | `removeUnusedNS` | 189 | ok | FAIL | — |\n| 32 | `sortAttrs` | 189 | ok | FAIL | — |\n| 33 | `sortDefsChildren` | 189 | ok | FAIL | — |\n| 34 | `removeDesc` | 189 | ok | FAIL | — |\n\n### Attributed\n- `cleanupIds` (broken)\n  - dangling-reference: 1 reference(s) point at ids that no longer exist (#t via aria on <svg>)\n\nArtifact verdict: **broken** (pixels: ok)\n- [error] dangling-reference: 1 reference(s) point at ids that no longer exist\n"
+    },
+    {
+      "key": "clean-icon",
+      "note": "a healthy icon: the preset changes nothing measurable",
+      "verdict": "ok",
+      "sizes": {
+        "before": 613,
+        "after": 547
+      },
+      "input": {
+        "bytes": 613,
+        "width": 64,
+        "height": 64,
+        "viewBox": "0 0 64 64",
+        "elements": 3,
+        "ids": 1,
+        "render": "1536x1536",
+        "density": 24
+      },
+      "blamed": [],
+      "dropped": [],
+      "artifact": {
+        "verdict": "ok",
+        "pixels": "ok",
+        "findings": [
+          {
+            "code": "ids-renamed",
+            "severity": "info",
+            "message": "1 id(s) renamed, all internal references still resolve",
+            "detail": "#sky — external selectors that used these ids will break"
+          }
+        ],
+        "bytes": 547
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 569,
+          "bytesSaved": 44,
+          "ms": 161.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 167.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 165.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 163.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 166,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 162.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 160.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 173.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 172.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 569,
+          "bytesSaved": 0,
+          "ms": 167.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 565,
+          "bytesSaved": 4,
+          "ms": 162.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [
+            "1 id(s) renamed, all internal references still resolve"
+          ],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 565,
+          "bytesSaved": 0,
+          "ms": 166,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 565,
+          "bytesSaved": 0,
+          "ms": 162.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 559,
+          "bytesSaved": 6,
+          "ms": 164.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 548,
+          "bytesSaved": 11,
+          "ms": 162.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 161.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 162,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 169.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 164.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 162.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 161.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 170,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 168.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 185.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 548,
+          "bytesSaved": 0,
+          "ms": 163.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 547,
+          "bytesSaved": 1,
+          "ms": 165.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 158.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 166.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 160.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 171.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 168.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 161.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 160.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 547,
+          "bytesSaved": 0,
+          "ms": 166,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [],
+      "markdown": "## clean-icon.svg — OK\n\ninput 613B (64x64 intrinsic, viewBox mapped to 1536x1536, 3 drawable, 1 ids) → artifact 547B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 569 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 569 | ok | ok | — |\n| 3 | `removeComments` | 569 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 569 | ok | ok | — |\n| 5 | `removeMetadata` | 569 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 569 | ok | ok | — |\n| 7 | `cleanupAttrs` | 569 | ok | ok | — |\n| 8 | `mergeStyles` | 569 | ok | ok | — |\n| 9 | `inlineStyles` | 569 | ok | ok | — |\n| 10 | `minifyStyles` | 569 | ok | ok | — |\n| 11 | `cleanupIds` | 565 | ok | ok | — |\n| 12 | `removeUselessDefs` | 565 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 565 | ok | ok | — |\n| 14 | `convertColors` | 559 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 548 | ok | ok | — |\n| 16 | `removeNonInheritableGroupAttrs` | 548 | ok | ok | — |\n| 17 | `removeUselessStrokeAndFill` | 548 | ok | ok | — |\n| 18 | `cleanupEnableBackground` | 548 | ok | ok | — |\n| 19 | `removeHiddenElems` | 548 | ok | ok | — |\n| 20 | `removeEmptyText` | 548 | ok | ok | — |\n| 21 | `convertShapeToPath` | 548 | ok | ok | — |\n| 22 | `convertEllipseToCircle` | 548 | ok | ok | — |\n| 23 | `moveElemsAttrsToGroup` | 548 | ok | ok | — |\n| 24 | `moveGroupAttrsToElems` | 548 | ok | ok | — |\n| 25 | `collapseGroups` | 548 | ok | ok | — |\n| 26 | `convertPathData` | 547 | ok | ok | — |\n| 27 | `convertTransform` | 547 | ok | ok | — |\n| 28 | `removeEmptyAttrs` | 547 | ok | ok | — |\n| 29 | `removeEmptyContainers` | 547 | ok | ok | — |\n| 30 | `mergePaths` | 547 | ok | ok | — |\n| 31 | `removeUnusedNS` | 547 | ok | ok | — |\n| 32 | `sortAttrs` | 547 | ok | ok | — |\n| 33 | `sortDefsChildren` | 547 | ok | ok | — |\n| 34 | `removeDesc` | 547 | ok | ok | — |\n\nArtifact verdict: **ok** (pixels: ok)\n- [info] ids-renamed: 1 id(s) renamed, all internal references still resolve\n"
+    },
+    {
+      "key": "current-color",
+      "note": "currentColor and stroke geometry survive",
+      "verdict": "ok",
+      "sizes": {
+        "before": 227,
+        "after": 209
+      },
+      "input": {
+        "bytes": 227,
+        "width": 48,
+        "height": 48,
+        "viewBox": "0 0 48 48",
+        "elements": 2,
+        "ids": 0,
+        "render": "1536x1536",
+        "density": 32
+      },
+      "blamed": [],
+      "dropped": [],
+      "artifact": {
+        "verdict": "ok",
+        "pixels": "ok",
+        "findings": [],
+        "bytes": 209
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 209,
+          "bytesSaved": 18,
+          "ms": 132.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 140.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 137.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 136.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 133.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 133.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 139.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 140.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 139.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 139.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 139,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 134,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 138.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 135.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 151.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 140.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 138.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 135.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 140.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 142.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 173.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 177.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 162.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 137.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 156,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 147.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 141.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 141.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 149.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 163,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 139.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 158.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 138.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 209,
+          "bytesSaved": 0,
+          "ms": 137.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [],
+      "markdown": "## current-color.svg — OK\n\ninput 227B (48x48 intrinsic, viewBox mapped to 1536x1536, 2 drawable, 0 ids) → artifact 209B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 209 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 209 | ok | ok | — |\n| 3 | `removeComments` | 209 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 209 | ok | ok | — |\n| 5 | `removeMetadata` | 209 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 209 | ok | ok | — |\n| 7 | `cleanupAttrs` | 209 | ok | ok | — |\n| 8 | `mergeStyles` | 209 | ok | ok | — |\n| 9 | `inlineStyles` | 209 | ok | ok | — |\n| 10 | `minifyStyles` | 209 | ok | ok | — |\n| 11 | `cleanupIds` | 209 | ok | ok | — |\n| 12 | `removeUselessDefs` | 209 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 209 | ok | ok | — |\n| 14 | `convertColors` | 209 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 209 | ok | ok | — |\n| 16 | `removeNonInheritableGroupAttrs` | 209 | ok | ok | — |\n| 17 | `removeUselessStrokeAndFill` | 209 | ok | ok | — |\n| 18 | `cleanupEnableBackground` | 209 | ok | ok | — |\n| 19 | `removeHiddenElems` | 209 | ok | ok | — |\n| 20 | `removeEmptyText` | 209 | ok | ok | — |\n| 21 | `convertShapeToPath` | 209 | ok | ok | — |\n| 22 | `convertEllipseToCircle` | 209 | ok | ok | — |\n| 23 | `moveElemsAttrsToGroup` | 209 | ok | ok | — |\n| 24 | `moveGroupAttrsToElems` | 209 | ok | ok | — |\n| 25 | `collapseGroups` | 209 | ok | ok | — |\n| 26 | `convertPathData` | 209 | ok | ok | — |\n| 27 | `convertTransform` | 209 | ok | ok | — |\n| 28 | `removeEmptyAttrs` | 209 | ok | ok | — |\n| 29 | `removeEmptyContainers` | 209 | ok | ok | — |\n| 30 | `mergePaths` | 209 | ok | ok | — |\n| 31 | `removeUnusedNS` | 209 | ok | ok | — |\n| 32 | `sortAttrs` | 209 | ok | ok | — |\n| 33 | `sortDefsChildren` | 209 | ok | ok | — |\n| 34 | `removeDesc` | 209 | ok | ok | — |\n\nArtifact verdict: **ok** (pixels: ok)\n"
+    },
+    {
+      "key": "animated",
+      "note": "a SMIL animation element is preserved",
+      "verdict": "ok",
+      "sizes": {
+        "before": 240,
+        "after": 210
+      },
+      "input": {
+        "bytes": 240,
+        "width": 64,
+        "height": 64,
+        "viewBox": "0 0 64 64",
+        "elements": 1,
+        "ids": 0,
+        "render": "1536x1536",
+        "density": 24
+      },
+      "blamed": [],
+      "dropped": [],
+      "artifact": {
+        "verdict": "ok",
+        "pixels": "ok",
+        "findings": [],
+        "bytes": 210
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 227,
+          "bytesSaved": 13,
+          "ms": 141.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 150.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 136.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 137.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 131.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 134.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 133.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 144.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 137.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 143.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 139.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 147.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 136,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 132.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 132.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 132.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 130.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 129.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 130.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 227,
+          "bytesSaved": 0,
+          "ms": 130.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 210,
+          "bytesSaved": 17,
+          "ms": 139.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 129.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 128.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 133.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 138,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 129.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 128.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 131.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 133.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 130.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 129.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 135.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 142.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 210,
+          "bytesSaved": 0,
+          "ms": 149,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [],
+      "markdown": "## animated.svg — OK\n\ninput 240B (64x64 intrinsic, viewBox mapped to 1536x1536, 1 drawable, 0 ids) → artifact 210B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 227 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 227 | ok | ok | — |\n| 3 | `removeComments` | 227 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 227 | ok | ok | — |\n| 5 | `removeMetadata` | 227 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 227 | ok | ok | — |\n| 7 | `cleanupAttrs` | 227 | ok | ok | — |\n| 8 | `mergeStyles` | 227 | ok | ok | — |\n| 9 | `inlineStyles` | 227 | ok | ok | — |\n| 10 | `minifyStyles` | 227 | ok | ok | — |\n| 11 | `cleanupIds` | 227 | ok | ok | — |\n| 12 | `removeUselessDefs` | 227 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 227 | ok | ok | — |\n| 14 | `convertColors` | 227 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 227 | ok | ok | — |\n| 16 | `removeNonInheritableGroupAttrs` | 227 | ok | ok | — |\n| 17 | `removeUselessStrokeAndFill` | 227 | ok | ok | — |\n| 18 | `cleanupEnableBackground` | 227 | ok | ok | — |\n| 19 | `removeHiddenElems` | 227 | ok | ok | — |\n| 20 | `removeEmptyText` | 227 | ok | ok | — |\n| 21 | `convertShapeToPath` | 210 | ok | ok | — |\n| 22 | `convertEllipseToCircle` | 210 | ok | ok | — |\n| 23 | `moveElemsAttrsToGroup` | 210 | ok | ok | — |\n| 24 | `moveGroupAttrsToElems` | 210 | ok | ok | — |\n| 25 | `collapseGroups` | 210 | ok | ok | — |\n| 26 | `convertPathData` | 210 | ok | ok | — |\n| 27 | `convertTransform` | 210 | ok | ok | — |\n| 28 | `removeEmptyAttrs` | 210 | ok | ok | — |\n| 29 | `removeEmptyContainers` | 210 | ok | ok | — |\n| 30 | `mergePaths` | 210 | ok | ok | — |\n| 31 | `removeUnusedNS` | 210 | ok | ok | — |\n| 32 | `sortAttrs` | 210 | ok | ok | — |\n| 33 | `sortDefsChildren` | 210 | ok | ok | — |\n| 34 | `removeDesc` | 210 | ok | ok | — |\n\nArtifact verdict: **ok** (pixels: ok)\n"
+    },
+    {
+      "key": "text-label",
+      "note": "text-bearing label (fonts off by default, so glyphs are not compared)",
+      "verdict": "ok",
+      "sizes": {
+        "before": 239,
+        "after": 225
+      },
+      "input": {
+        "bytes": 239,
+        "width": 200,
+        "height": 48,
+        "viewBox": "0 0 200 48",
+        "elements": 2,
+        "ids": 0,
+        "render": "1536x369",
+        "density": 7.68
+      },
+      "blamed": [],
+      "dropped": [],
+      "artifact": {
+        "verdict": "ok",
+        "pixels": "ok",
+        "findings": [],
+        "bytes": 225
+      },
+      "steps": [
+        {
+          "index": 1,
+          "plugin": "removeDoctype",
+          "bytes": 231,
+          "bytesSaved": 8,
+          "ms": 67.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 2,
+          "plugin": "removeXMLProcInst",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 49.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 3,
+          "plugin": "removeComments",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 41.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 4,
+          "plugin": "removeDeprecatedAttrs",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 38.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 5,
+          "plugin": "removeMetadata",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 44.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 6,
+          "plugin": "removeEditorsNSData",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 46,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 7,
+          "plugin": "cleanupAttrs",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 41.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 8,
+          "plugin": "mergeStyles",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 44.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 9,
+          "plugin": "inlineStyles",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 38.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 10,
+          "plugin": "minifyStyles",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 37.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 11,
+          "plugin": "cleanupIds",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 36.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 12,
+          "plugin": "removeUselessDefs",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 43,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 13,
+          "plugin": "cleanupNumericValues",
+          "bytes": 231,
+          "bytesSaved": 0,
+          "ms": 38.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 14,
+          "plugin": "convertColors",
+          "bytes": 225,
+          "bytesSaved": 6,
+          "ms": 37.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 15,
+          "plugin": "removeUnknownsAndDefaults",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 40.4,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 16,
+          "plugin": "removeNonInheritableGroupAttrs",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 17,
+          "plugin": "removeUselessStrokeAndFill",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.9,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 18,
+          "plugin": "cleanupEnableBackground",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 19,
+          "plugin": "removeHiddenElems",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 44.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 20,
+          "plugin": "removeEmptyText",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 38,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 21,
+          "plugin": "convertShapeToPath",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 22,
+          "plugin": "convertEllipseToCircle",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 36,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 23,
+          "plugin": "moveElemsAttrsToGroup",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 39.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 24,
+          "plugin": "moveGroupAttrsToElems",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.7,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 25,
+          "plugin": "collapseGroups",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 26,
+          "plugin": "convertPathData",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 41.3,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 27,
+          "plugin": "convertTransform",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 28,
+          "plugin": "removeEmptyAttrs",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.5,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 29,
+          "plugin": "removeEmptyContainers",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 42.1,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 30,
+          "plugin": "mergePaths",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.6,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 31,
+          "plugin": "removeUnusedNS",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 38,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 32,
+          "plugin": "sortAttrs",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 33,
+          "plugin": "sortDefsChildren",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 43.8,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        },
+        {
+          "index": 34,
+          "plugin": "removeDesc",
+          "bytes": 225,
+          "bytesSaved": 0,
+          "ms": 37.2,
+          "verdict": "ok",
+          "stateVerdict": "ok",
+          "findings": [],
+          "info": [],
+          "worst": {
+            "width": 1536,
+            "verdict": "ok",
+            "lostInk": 0,
+            "gainedInk": 0,
+            "colourP99": 0,
+            "colourChangedRatio": 0,
+            "changedRatio": 0,
+            "worstCell": null
+          }
+        }
+      ],
+      "diffs": [],
+      "markdown": "## text-label.svg — OK\n\ninput 239B (200x48 intrinsic, viewBox mapped to 1536x369, 2 drawable, 0 ids) → artifact 225B\n\n| # | plugin | bytes | delta | state | evidence |\n|---|---|---|---|---|---|\n| 1 | `removeDoctype` | 231 | ok | ok | — |\n| 2 | `removeXMLProcInst` | 231 | ok | ok | — |\n| 3 | `removeComments` | 231 | ok | ok | — |\n| 4 | `removeDeprecatedAttrs` | 231 | ok | ok | — |\n| 5 | `removeMetadata` | 231 | ok | ok | — |\n| 6 | `removeEditorsNSData` | 231 | ok | ok | — |\n| 7 | `cleanupAttrs` | 231 | ok | ok | — |\n| 8 | `mergeStyles` | 231 | ok | ok | — |\n| 9 | `inlineStyles` | 231 | ok | ok | — |\n| 10 | `minifyStyles` | 231 | ok | ok | — |\n| 11 | `cleanupIds` | 231 | ok | ok | — |\n| 12 | `removeUselessDefs` | 231 | ok | ok | — |\n| 13 | `cleanupNumericValues` | 231 | ok | ok | — |\n| 14 | `convertColors` | 225 | ok | ok | — |\n| 15 | `removeUnknownsAndDefaults` | 225 | ok | ok | — |\n| 16 | `removeNonInheritableGroupAttrs` | 225 | ok | ok | — |\n| 17 | `removeUselessStrokeAndFill` | 225 | ok | ok | — |\n| 18 | `cleanupEnableBackground` | 225 | ok | ok | — |\n| 19 | `removeHiddenElems` | 225 | ok | ok | — |\n| 20 | `removeEmptyText` | 225 | ok | ok | — |\n| 21 | `convertShapeToPath` | 225 | ok | ok | — |\n| 22 | `convertEllipseToCircle` | 225 | ok | ok | — |\n| 23 | `moveElemsAttrsToGroup` | 225 | ok | ok | — |\n| 24 | `moveGroupAttrsToElems` | 225 | ok | ok | — |\n| 25 | `collapseGroups` | 225 | ok | ok | — |\n| 26 | `convertPathData` | 225 | ok | ok | — |\n| 27 | `convertTransform` | 225 | ok | ok | — |\n| 28 | `removeEmptyAttrs` | 225 | ok | ok | — |\n| 29 | `removeEmptyContainers` | 225 | ok | ok | — |\n| 30 | `mergePaths` | 225 | ok | ok | — |\n| 31 | `removeUnusedNS` | 225 | ok | ok | — |\n| 32 | `sortAttrs` | 225 | ok | ok | — |\n| 33 | `sortDefsChildren` | 225 | ok | ok | — |\n| 34 | `removeDesc` | 225 | ok | ok | — |\n\nArtifact verdict: **ok** (pixels: ok)\n"
+    }
+  ],
+  "corpus": [
+    {
+      "name": "c00-iconmonstr-check-mark-8-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c01-logo.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c02-iconmonstr-user-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c03-keyv-symbol.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (102B -> 16B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c04-keyv-symbol-white.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (14B -> 0B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c05-keyv-symbol-black.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (17B -> 0B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c06-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c07-iconmonstr-paperclip-2-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c08-iconmonstr-puzzle-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c09-iconmonstr-direction-4-icon.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c10-legacy_logo.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c11-keyv-logo-horizontal-white.s.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (14B -> 13B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c12-keyv-logo-horizontal-black.s.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (17B -> 16B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c13-keyv-logo-vertical-white.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (14B -> 13B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c14-keyv-logo-vertical-black.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (17B -> 16B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c15-keyv-logo-vertical-white.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (116B -> 29B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c16-keyv-logo-vertical-black.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (119B -> 32B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c17-keyv-logo-horizontal-white.s.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (116B -> 29B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c18-keyv-logo-horizontal-black.s.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (119B -> 32B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c19-svg.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c20-terrain.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c21-testmuai-logo-white.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c22-testmuai-logo.svg",
+      "verdict": "ok",
+      "blamed": []
+    },
+    {
+      "name": "c23-csstree-logo.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (79B -> 17B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c24-csstree-logo-rounded.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "inlineStyles",
+          "reason": "style-rewritten: <style> content rewritten — verify selectors still resolve (79B -> 17B of CSS)"
+        }
+      ]
+    },
+    {
+      "name": "c25-banner-inverse.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "removeUnknownsAndDefaults",
+          "reason": "intrinsic-size-removed: width/height removed — intrinsic size is now derived from viewBox (100%x100% -> -x-)"
+        }
+      ]
+    },
+    {
+      "name": "c26-banner.svg",
+      "verdict": "review",
+      "blamed": [
+        {
+          "plugin": "removeUnknownsAndDefaults",
+          "reason": "intrinsic-size-removed: width/height removed — intrinsic size is now derived from viewBox (100%x100% -> -x-)"
+        }
+      ]
+    },
+    {
+      "name": "c27-api-map.svg",
+      "verdict": "ok",
+      "blamed": []
+    }
+  ],
+  "corpusSummary": {
+    "ok": 13,
+    "review": 15
+  }
+}
