@@ -231,9 +231,9 @@ bump; if the order drifts, the test fails before a user sees a wrong verdict.
 npm test
 ```
 
-37 tests across five files (comparator maths on synthetic frames, structural
-checks, gate integration on real svgo + resvg, CLI exit codes, packaging
-guards). The suite spawns one Node process per file via `scripts/test.mjs`
+42 tests across five files — comparator maths on synthetic frames (8),
+structural checks (10), gate integration on real svgo + resvg (10), CLI exit
+codes and file outputs (9), packaging guards (5). The suite spawns one Node process per file via `scripts/test.mjs`
 instead of `node --test <dir>`, because declared support starts at Node 18 and
 directory/glob handling differs across Node majors and platforms.
 

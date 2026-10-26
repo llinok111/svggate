@@ -36,7 +36,12 @@ test('the declared minimum Node version is 18 and nothing needs newer', () => {
 
 test('the CLI entry point is executable by Node and uses LF endings', () => {
   const shebang = readFileSync(join(root, 'bin', 'svggate.mjs'));
-  assert.ok(shebang.subarray(0, 10).toString().startsWith('#!/usr/bin/env node'));
+  const expected = '#!/usr/bin/env node';
+  assert.equal(
+    shebang.subarray(0, expected.length).toString(),
+    expected,
+    'bin/svggate.mjs must start with a shebang or it cannot be executed as a CLI',
+  );
   assert.ok(!shebang.includes(13), 'CR found: the shebang would break on Linux');
 });
 
