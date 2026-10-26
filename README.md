@@ -4,24 +4,27 @@ A render-verified gate for SVG optimization. Run it before you ship an optimiser
 config, and it tells you **which svgo plugin changed what people see** — in
 pixels and in structure — instead of handing you a boolean and hoping.
 
-```
-$ svggate check logo.svg
-## logo.svg — BROKEN
+Verbatim output of `svggate check test/fixtures/use-inheritance.svg` (abridged
+between rows 2 and 14, and between 17 and 34):
 
-input 313B (100x100 intrinsic, viewBox mapped to 437x437, 2 drawable, 1 ids) → artifact 180B
+```
+## test/fixtures/use-inheritance.svg — BROKEN
+
+input 313B (100x100 intrinsic, viewBox mapped to 1536x1536, 2 drawable, 1 ids) → artifact 180B
 
 | # | plugin | bytes | delta | state | evidence |
 |---|---|---|---|---|---|
-| 1 | `removeDoctype` | 313 | ok | ok | — |
+| 1 | `removeDoctype` | 300 | ok | ok | — |
+| 2 | `removeXMLProcInst` | 300 | ok | ok | — |
 | … | | | | | |
-| 15 | `removeUnknownsAndDefaults` | 199 | FAIL | FAIL | paint drifted: p99 channel delta 178/255 across 85.5% of painted blocks |
+| 15 | `removeUnknownsAndDefaults` | 199 | FAIL | FAIL | colour Δ178; region 100% |
 | 16 | `removeNonInheritableGroupAttrs` | 199 | ok | FAIL | — |
 | … | | | | | |
 | 34 | `removeDesc` | 180 | ok | FAIL | — |
 
 ### Attributed
 - `removeUnknownsAndDefaults` (broken)
-  - paint drifted: p99 channel delta 178/255 across 85.5% of painted blocks at 437px wide
+  - paint drifted: p99 channel delta 178/255 across 96.2% of painted blocks at 1536px wide
 
 Artifact verdict: **broken** (pixels: broken)
 ```
@@ -169,7 +172,7 @@ in `test/fixtures/` are taken from upstream issues:
 
 | fixture | upstream issue | svggate verdict | attributed to | evidence |
 |---|---|---|---|---|
-| `use-inheritance.svg` | [#2239](https://github.com/svg/svgo/issues/2239) | broken | `removeUnknownsAndDefaults` | paint drift, p99 Δ178/255 over 85.5% of painted blocks |
+| `use-inheritance.svg` | [#2239](https://github.com/svg/svgo/issues/2239) | broken | `removeUnknownsAndDefaults` | paint drift, p99 Δ178/255 over 96.2% of painted blocks |
 | `arc-dot.svg` | [#2104](https://github.com/svg/svgo/issues/2104) | broken | `convertPathData` | localised change, 176px lost = 26% of one 32×32 region |
 
 `aria-labelledby.svg` reproduces a third defect the tool found on its own and
